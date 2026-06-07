@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page-title">أسامة محمد عبد العزيز الحاج - الموقع التعريفي</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans+Arabic:wght@300;400;500;600;700;800&family=Playwrite+GB+J:wght@100;200;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Osama</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" data-i18n="nav-home">الرئيسية</a></li>
+                <li><a href="#about" data-i18n="nav-about">عنّي</a></li>
+                <li><a href="#skills" data-i18n="nav-skills">المهارات</a></li>
+                <li><a href="#contact" data-i18n="nav-contact">تواصل</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <button class="theme-toggle" onclick="toggleTheme()" title="تغيير الثيم" data-i18n="theme-title">
+                <img src="settings.svg" class="theme-icon" alt="Theme">
+            </button>
+            <button class="lang-toggle" onclick="toggleLang()" title="English">
+                <span>EN</span>
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="myOsama.png" alt="Osama Profile Picture" class="profile-pic">
+            </div>
+            <div class="hero-text">
+                <h1 data-i18n="hero-greeting">مرحباً، أنا <span class="highlight">أسامة محمد عبد العزيز الحاج</span></h1>
+                <p class="subtitle" data-i18n="hero-subtitle">مطور ويب | مصمم جرافيك | مبدع رقمي</p>
+                <p class="bio" data-i18n="hero-bio">شغوف بتحويل الأفكار إلى تجارب رقمية مميزة. أؤمن بقوة التصميم وأهمية البرمجة في بناء المستقبل.</p>
+                <a href="#skills" class="btn" data-i18n="hero-btn">استعرض مهاراتي</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title reveal" data-i18n="about-title">عنّي</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="reveal-left" data-i18n="about-p1">أنا أسامة محمد عبد العزيز الحاج، مطور ويب ومصمم جرافيك بخبرة في إنشاء مواقع وتطبيقات ويب حديثة. أستمتع بتقديم حلول إبداعية تلبي احتياجات العملاء وتتجاوز توقعاتهم.</p>
+                    <p class="reveal-right" data-i18n="about-p2">أعمل على تطوير مهاراتي باستمرار في مجالات البرمجة والتصميم، وأسعى دائماً لمواكبة أحدث التقنيات في عالم التكنولوجيا.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title reveal" data-i18n="skills-title">مهاراتي</h2>
+            <div class="skills-grid">
+                <div class="skill-card reveal-scale">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%"></div>
+                    </div>
+                    <span class="percent">95%</span>
+                </div>
+                <div class="skill-card reveal-scale">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+                    <span class="percent">90%</span>
+                </div>
+                <div class="skill-card reveal-scale">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 40%"></div>
+                    </div>
+                    <span class="percent">40%</span>
+                </div>
+                <div class="skill-card reveal-scale">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3 data-i18n="skill-design">تصميم جرافيك</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                    <span class="percent">85%</span>
+                </div>
+                <div class="skill-card reveal-scale">
+                    <i class="fas fa-database"></i>
+                    <h3 data-i18n="skill-db">قواعد بيانات</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%"></div>
+                    </div>
+                    <span class="percent">50%</span>
+                </div>
+                <div class="skill-card reveal-scale">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Git & GitHub</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                    <span class="percent">85%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title reveal" data-i18n="contact-title">تواصل معي</h2>
+            <div class="contact-content">
+                <div class="contact-info reveal-left">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>osamaandanes@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>0598762845</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p data-i18n="contact-location">فلسطين / غزة</p>
+                    </div>
+                </div>
+                <form class="contact-form reveal-right" onsubmit="sendMessage(event)">
+                    <input type="text" placeholder="الاسم" data-i18n-placeholder="form-name" required>
+                    <input type="email" placeholder="البريد الإلكتروني" data-i18n-placeholder="form-email" required>
+                    <textarea placeholder="رسالتك..." data-i18n-placeholder="form-message" rows="5" required></textarea>
+                    <button type="submit" class="btn" data-i18n="form-submit">إرسال</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links reveal">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p data-i18n="footer">&copy; 2026 أسامة محمد عبد العزيز الحاج. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="osama.js"></script>
+</body>
+</html>
